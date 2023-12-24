@@ -2,9 +2,9 @@ from ultralytics import YOLO
 import os, itertools, datetime, json
 
 #os.chdir('/kaggle/working/origin-data/yolov8-ears')
-dname = os.path.dirname(os.path.abspath(__file__))
+#dname = os.path.dirname(os.path.abspath(__file__))
 #print(dname)
-os.chdir(dname)
+#os.chdir(dname)
 # Load a model
 model = YOLO("yolov8n.pt")
 
