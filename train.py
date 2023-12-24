@@ -31,7 +31,7 @@ augmentation_params = {
 # Training with best hyperparameters and augmentation parameters
 try:
     model.train(
-        data="ears.yaml", 
+        data="../ears.yaml", 
         epochs=20, 
         optimizer='AdamW', 
         pretrained=True, 
