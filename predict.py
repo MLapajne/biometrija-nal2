@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import os
 
 
-WEIGHTS = 'runs/detect/trainXX/weights/best.pt'
+WEIGHTS = 'runs/detect/train/weights/best.pt'
 DEVICE = 'cpu' #cuda # For predictions you can use CPU
 OUT_DIR = os.path.join('runs', 'detect')
 UNCERTAINTY_THRESHOLD = 0.4
