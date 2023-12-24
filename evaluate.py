@@ -8,6 +8,6 @@ dname = os.path.dirname(os.path.abspath(__file__))
 os.chdir(dname)
 
 # Load the model, feel free to try other models
-model = YOLO('runs/detect/trainXX/weights/best.pt')
+model = YOLO('runs/detect/train/weights/best.pt')
 
 metrics = model.val(data="ears_final_test.yaml")
