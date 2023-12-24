@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import os, itertools, datetime, json
 
-os.chdir('/kaggle/working/origin-data/yolov8-ears')
+os.chdir('../')
 
 # Load a model
 model = YOLO("yolov8n.pt")
