@@ -6,8 +6,8 @@ import os, itertools, datetime
 # model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 
 # Move to the dir of this script        
-dname = os.path.dirname(os.path.abspath(__file__))
-os.chdir(dname)
+#dname = os.path.dirname(os.path.abspath(__file__))
+os.chdir('/kaggle/working/origin-data/yolov8-ears')
 
 # Load the model, feel free to try other models
 model = YOLO("yolov8n.pt")
