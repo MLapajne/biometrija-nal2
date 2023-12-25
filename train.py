@@ -14,21 +14,7 @@ dropout = 0.2
 weight_decay = 0.0001
 
 # Data augmentation parameters
-augmentation_params = {
-    'hsv_h': 0.02,  # Small adjustment
-    'hsv_s': 0.35,   # Moderate adjustment for saturation
-    'hsv_v': 0.45,   # Moderate adjustment for value/brightness
-    'degrees': 15,  # Small rotation
-    'translate': 0.2,  # Moderate translation
-    'scale': 0.1,   # Moderate scaling
-    'shear': 10,    # Mild shearing
-    'perspective': 0.001,  # Mild perspective transformation
-    'flipud': 0.0,  # No vertical flipping
-    'fliplr': 0.5,  # 50% chance of horizontal flipping
-    'mosaic': 1.0,
-    'mixup': 0.1,   # Low mixup
-    'copy_paste': 0.1  # Low copy-paste
-}
+
 
 # Training with best hyperparameters and augmentation parameters
 try:
@@ -51,7 +37,6 @@ try:
         warmup_bias_lr=0.1,
         box=7.5,
         cls=0.5,
-        **augmentation_params
     )
     # Save the model checkpoint
 except Exception as e:
