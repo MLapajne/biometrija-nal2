@@ -15,12 +15,12 @@ weight_decay = 0.0001
 
 # Data augmentation parameters
 augmentation_params = {
-    'hsv_h': 0.025,  # Small adjustment
+    'hsv_h': 0.02,  # Small adjustment
     'hsv_s': 0.35,   # Moderate adjustment for saturation
     'hsv_v': 0.45,   # Moderate adjustment for value/brightness
     'degrees': 15,  # Small rotation
     'translate': 0.2,  # Moderate translation
-    'scale': 0.15,   # Moderate scaling
+    'scale': 0.1,   # Moderate scaling
     'shear': 10,    # Mild shearing
     'perspective': 0.001,  # Mild perspective transformation
     'flipud': 0.0,  # No vertical flipping
