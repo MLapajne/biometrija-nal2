@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import os
 
 
-WEIGHTS = 'runs/detect/train/weights/best.pt'
+WEIGHTS = 'runs/detect/train2/weights/best.pt'
 DEVICE = 'cpu' #cuda # For predictions you can use CPU
 OUT_DIR = os.path.join('runs', 'detect')
 UNCERTAINTY_THRESHOLD = 0.4
@@ -70,6 +70,9 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         results = predictor.run(sys.argv[1])
     else:
-        def_path = "datasets/ears/images/test/0501.png"
+        def_path = "datasets/ears/images/test/0545.png" # 04
+        #def_path = "datasets/ears/images/test/0517.png" #05
+        #def_path = "datasets/ears/images/test/0609.png" #07
+        #def_path = "datasets/ears/images/test/0641.png" #06
         print("Input image path needed! Defaulting to " + def_path) 
         results = predictor.run(def_path)
